@@ -35,3 +35,5 @@ To run in the background.
 ```
 ./vendor/bin/sail php artisan test
 ```
+
+Collection API endpoints for Postman in file [testWork_47591.postman_collection.json](testWork_47591.postman_collection.json) 
