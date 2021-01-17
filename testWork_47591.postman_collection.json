@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "370f8b4b-eb1d-43a2-b582-44839861631d",
+		"name": "test laravel resource",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create site card",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": {\n       \"type\": \"site_card\",\n       \"attributes\": {\n\t\t\t\"action\": \"create\",\n\t\t\t\"title\": \"asdasd\",\n    \t\t\"url\": \"http://ya.ru\",\n    \t\t\"description\": \"2020-11-30\"\n       }\n   }\n}"
+				},
+				"url": {
+					"raw": "localhost/api/sitecard",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"sitecard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update site card",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/vnd.api+json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": {\n       \"type\": \"site_card\",\n       \"attributes\": {\n\t\t\t\"action\": \"create\",\n\t\t\t\"title\": \"asdasd\",\n    \t\t\"url\": \"http://ya.ru/sdsdsd\",\n    \t\t\"description\": \"2020-11-30\"\n       }\n   }\n}"
+				},
+				"url": {
+					"raw": "localhost/api/sitecard/4",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"sitecard",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list site cards",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": {\n       \"type\": \"site_card\",\n       \"attributes\": {\n\t\t\t\"action\": \"create\",\n\t\t\t\"title\": \"asdasd\",\n    \t\t\"url\": \"aasdasdasdds\",\n    \t\t\"description\": \"2020-11-30\"\n       }\n   }\n}"
+				},
+				"url": {
+					"raw": "localhost/api/sitecard",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"sitecard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete site card",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": {\n       \"type\": \"site_card\",\n       \"attributes\": {\n\t\t\t\"action\": \"create\",\n\t\t\t\"title\": \"asdasd\",\n    \t\t\"url\": \"aasdasdasdds\",\n    \t\t\"description\": \"2020-11-30\"\n       }\n   }\n}"
+				},
+				"url": {
+					"raw": "localhost/api/sitecard/4",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"sitecard",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

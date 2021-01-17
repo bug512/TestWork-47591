@@ -1,0 +1,16 @@
+.card {
+    &-title {
+        line-height: 1.5625rem;
+        margin-bottom: 0px;
+        cursor: pointer;
+    }
+    .btn-close {
+        padding: 0px;
+        i {
+            font-size: 1.4rem;
+            font-weight: 500;
+            cursor: pointer;
+            line-height: 0px;
+        }
+    }
+}
