@@ -13,7 +13,7 @@
 To run in the background.
 
 ```
-./vendor/bin/sail up 
+./vendor/bin/sail up -d
 ```
 
 2. Preparing the database by execute migrations.
