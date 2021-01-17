@@ -1,4 +1,4 @@
-#Application to saving favorite sites.
+# Application to saving favorite sites.
 
 ![demo-image](image.png)
 
